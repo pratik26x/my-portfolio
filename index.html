@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Pratik Rakhonde's Portfolio - Software Engineer & AI/ML Enthusiast">
+    <meta name="keywords" content="Pratik Rakhonde, Portfolio, Software Engineer, AI/ML Enthusiast, Full-Stack Development, Machine Learning, Cloud Computing">
+    <title>Pratik's Portfolio</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <i class='bx bx-menu' id="menu-icon"></i> <!-- Menu Icon -->
+        <i class='bx bx-x' id="close-icon"></i> <!-- Close Icon -->
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Pratik Rakhonde</h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <p>
+                I am a passionate Software Engineer & AI/ML Enthusiast pursuing my MCA at DY Patil Institute of Management & Research, Pimpri. With expertise in Full-Stack Development, Machine Learning, and Cloud Computing, I love building scalable applications and contributing to open-source projects. Always eager to learn and innovate, I aim to solve real-world problems using technology. 🚀
+            </p>
+            <div class="social-media">
+                <a href="https://www.instagram.com/pratik.26x/" target="_blank" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+                <a href="https://www.linkedin.com/in/pratik-rakhonde-952557280/" target="_blank" aria-label="LinkedIn"><i class='bx bxl-linkedin-square'></i></a>
+                <a href="https://github.com/pratik26x" target="_blank" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+                <a href="https://x.com/pratik26x" target="_blank" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
+            </div>
+            <a href="docs/Pratik_Rakhonde_Resume.pdf" class="btn" download>Download CV</a>
+        </div>
+        <div class="home-img">
+            <img src="images/home.png" alt="Pratik Rakhonde" />
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/about.png" alt="About Pratik Rakhonde">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Software Engineer & AI/ML Enthusiast!</h3>
+            <p>
+                I am a Software Engineer & AI/ML Enthusiast currently pursuing my MCA at DY Patil Institute of Management & Research, Pimpri. With expertise in Full-Stack Development (MERN, Django), Machine Learning, and Cloud Computing (AWS, GCP, Azure), I enjoy building scalable applications and solving complex problems.
+            </p>
+            <a href="about-details.html" class="btn">Read More</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h2 class="heading">Our <span>Services</span></h2>
+        <div class="services-container">
+            <!-- Web Development Service -->
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Full Stack Web Development</h3>
+                <p>
+                    I specialize in building scalable, secure, and responsive web applications using MERN Stack (MongoDB, Express.js, React.js, Node.js) and Django. From front-end UI to back-end logic, I develop solutions that enhance user experience and business growth.
+                </p>
+                <a href="full-stack-development.html" class="btn">Read More</a>
+            </div>
+
+            <!-- AI/ML Solutions -->
+            <div class="services-box">
+                <i class='bx bx-brain'></i>
+                <h3>AI & Machine Learning Solutions</h3>
+                <p>
+                    Passionate about AI, I develop AI-powered applications like chatbots, recommendation systems, and predictive models using Python, TensorFlow, OpenAI API, and Google Cloud AI to provide smart, data-driven solutions.
+                </p>
+                <a href="ai-ml-solutions.html" class="btn">Read More</a>
+            </div>
+
+            <!-- Cloud & DevOps -->
+            <div class="services-box">
+                <i class='bx bx-cloud'></i>
+                <h3>Cloud Computing & DevOps</h3>
+                <p>
+                    With experience in Google Cloud, AWS, and Azure, I deploy and manage applications efficiently. I implement CI/CD pipelines, containerization (Docker), and cloud-based deployments, ensuring scalability and performance.
+                </p>
+                <a href="cloud-devops.html" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Projects</span></h2>
+        <div class="portfolio-container">
+            <!-- Portfolio Item 1: AI-Powered Chatbot -->
+            <div class="portfolio-box">
+                <img src="images/chatbot.jpg" alt="AI-Powered Chatbot" />
+                <div class="portfolio-layer">
+                    <h3>AI-Powered Chatbot</h3>
+                    <p>Developed a chatbot using OpenAI API for smart conversations.</p>
+                    <a href="#" aria-label="View AI-Powered Chatbot Project"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <!-- Portfolio Item 2: Airbnb Clone -->
+            <div class="portfolio-box">
+                <img src="images/airbnb.jpg" alt="Airbnb Clone" />
+                <div class="portfolio-layer">
+                    <h3>Airbnb Clone</h3>
+                    <p>Built a full-stack property listing platform with authentication & payments.</p>
+                    <a href="#" aria-label="View Airbnb Clone Project"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <!-- Portfolio Item 3: Zerodha Clone -->
+            <div class="portfolio-box">
+                <img src="images/zerodha.jpg" alt="Zerodha Clone" />
+                <div class="portfolio-layer">
+                    <h3>Zerodha Clone</h3>
+                    <p>Developed a real-time stock trading platform using MERN and WebSockets.</p>
+                    <a href="#" aria-label="View Zerodha Clone Project"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <!-- Portfolio Item 4: LinkedIn Clone -->
+            <div class="portfolio-box">
+                <img src="images/linkdln.jpg" alt="LinkedIn Clone" />
+                <div class="portfolio-layer">
+                    <h3>LinkedIn Clone</h3>
+                    <p>Created a professional networking site with post creation & messaging.</p>
+                    <a href="#" aria-label="View LinkedIn Clone Project"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <!-- Portfolio Item 5: GitHub Clone -->
+            <div class="portfolio-box">
+                <img src="images/github.jpg" alt="GitHub Clone" />
+                <div class="portfolio-layer">
+                    <h3>GitHub Clone</h3>
+                    <p>Implemented a basic version control system with repository management.</p>
+                    <a href="#" aria-label="View GitHub Clone Project"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <!-- Portfolio Item 6: Zoom Clone -->
+            <div class="portfolio-box">
+                <img src="images/zoom.jpg" alt="Zoom Clone" />
+                <div class="portfolio-layer">
+                    <h3>Zoom Clone</h3>
+                    <p>Developed a video conferencing solution with WebRTC & Socket.io.</p>
+                    <a href="#" aria-label="View Zoom Clone Project"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+        <div class="contact-form">
+            <form id="contactForm">
+                <!-- Input Group for Name and Email -->
+                <div class="input-group">
+                    <div class="input-box">
+                        <input type="text" id="name" placeholder=" " required>
+                        <label for="name">Enter Your Name</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="email" id="email" placeholder=" " required>
+                        <label for="email">Enter Your Email</label>
+                    </div>
+                </div>
+
+                <!-- Input Group for Phone and Subject -->
+                <div class="input-group">
+                    <div class="input-box">
+                        <input type="text" id="phone" placeholder=" ">
+                        <label for="phone">Enter your Mobile Number</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" id="subject" placeholder=" ">
+                        <label for="subject">Enter Your Subject</label>
+                    </div>
+                </div>
+
+                <!-- Textarea for Message -->
+                <div class="input-box">
+                    <textarea id="message" placeholder=" " required></textarea>
+                    <label for="message">Enter Your Message</label>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn">Send Message</button>
+
+                <!-- Response Message -->
+                <p id="responseMessage"></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2025 by Pratik Rakhonde | All Rights Reserved.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home" aria-label="Scroll to Top"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+    <!-- Scroll Reveal Library -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Typed.js Library -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
