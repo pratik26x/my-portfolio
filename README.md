@@ -1,3 +1,5 @@
+
+Copy
 # Portfolio Website
 
 This repository contains the code for my personal portfolio website, showcasing my skills, projects, and experiences. The portfolio is designed to be **responsive**, **user-friendly**, and **visually appealing**, providing a seamless experience across all devices.
@@ -67,5 +69,40 @@ To run this project locally, follow these steps:
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/your-username/your-repo-name.git
+Navigate to the project directory:
 
-   
+bash
+Copy
+cd your-repo-name
+Install dependencies for frontend and backend:
+
+bash
+Copy
+cd frontend
+npm install  # or yarn install
+
+cd ../backend
+npm install  # or yarn install
+Set up environment variables:
+
+Create a .env file in the backend folder and add the following:
+
+env
+Copy
+MONGO_URI=your_mongodb_connection_string
+EMAIL_USER=your_email_address
+EMAIL_PASS=your_email_password
+PORT=5000
+Run the backend server:
+
+bash
+Copy
+cd backend
+npm start  # or yarn start
+Run the frontend development server:
+
+bash
+Copy
+cd frontend
+npm start  # or yarn start
+Open your browser and visit http://localhost:3000 to view the frontend.
