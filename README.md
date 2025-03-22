@@ -66,43 +66,29 @@ This repository contains the code for my personal portfolio website, showcasing 
 
 To run this project locally, follow these steps:
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/your-username/your-repo-name.git
-Navigate to the project directory:
+# Step 1: Clone the repository
+git clone https://github.com/your-username/your-repo-name.git
 
-bash
-Copy
+# Step 2: Navigate to the project directory
 cd your-repo-name
-Install dependencies for frontend and backend:
 
-bash
-Copy
+# Step 3: Install dependencies for frontend and backend
 cd frontend
 npm install  # or yarn install
 
 cd ../backend
 npm install  # or yarn install
-Set up environment variables:
 
-Create a .env file in the backend folder and add the following:
+# Step 4: Set up environment variables
+# Create a .env file in the backend folder and add the required variables
 
-env
-Copy
-MONGO_URI=your_mongodb_connection_string
-EMAIL_USER=your_email_address
-EMAIL_PASS=your_email_password
-PORT=5000
-Run the backend server:
-
-bash
-Copy
+# Step 5: Run the backend server
 cd backend
 npm start  # or yarn start
-Run the frontend development server:
 
-bash
-Copy
-cd frontend
+# Step 6: Run the frontend development server
+cd ../frontend
 npm start  # or yarn start
-Open your browser and visit http://localhost:3000 to view the frontend.
+
+# Step 7: Open the website in your browser
+# Visit http://localhost:3000
