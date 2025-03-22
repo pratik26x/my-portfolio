@@ -1,5 +1,3 @@
-
-Copy
 # Portfolio Website
 
 This repository contains the code for my personal portfolio website, showcasing my skills, projects, and experiences. The portfolio is designed to be **responsive**, **user-friendly**, and **visually appealing**, providing a seamless experience across all devices.
@@ -66,29 +64,11 @@ This repository contains the code for my personal portfolio website, showcasing 
 
 To run this project locally, follow these steps:
 
-# Step 1: Clone the repository
-git clone https://github.com/your-username/your-repo-name.git
-
-# Step 2: Navigate to the project directory
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/your-username/your-repo-name.git
+   ```
+2.Navigate to the project directory:
+```bash
 cd your-repo-name
-
-# Step 3: Install dependencies for frontend and backend
-cd frontend
-npm install  # or yarn install
-
-cd ../backend
-npm install  # or yarn install
-
-# Step 4: Set up environment variables
-# Create a .env file in the backend folder and add the required variables
-
-# Step 5: Run the backend server
-cd backend
-npm start  # or yarn start
-
-# Step 6: Run the frontend development server
-cd ../frontend
-npm start  # or yarn start
-
-# Step 7: Open the website in your browser
-# Visit http://localhost:3000
+```
