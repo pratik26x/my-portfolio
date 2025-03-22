@@ -69,9 +69,9 @@ To run this project locally, follow these steps:
    git clone https://github.com/your-username/your-repo-name.git
    ```
 2.Navigate to the project directory:
-  ```bash
-  cd your-repo-name
-  ```
+   ```bash
+   cd your-repo-name
+   ```
 3. Install dependencies for frontend and backend:
    ```bash
     cd frontend
@@ -96,11 +96,11 @@ To run this project locally, follow these steps:
     npm start  # or yarn start
    ```
 6.Run the frontend development server:
-  ```bash
+   ```bash
     Copy
     cd frontend
     npm start  # or yarn start
-  ```
+   ```
 7. "Open your browser and visit http://localhost:3000 to view the frontend".
 
 8.Contributing
