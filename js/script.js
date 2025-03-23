@@ -125,7 +125,7 @@ document.addEventListener("DOMContentLoaded", function () {
             submitButton.innerText = "Sending...";
 
             try {
-                const response = await fetch("https://my-portfolio-rjap.onrender.com/api/contact", {
+                const response = await fetch("https://my-portfolio-gljt.onrender.com", {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({ name, email, phone, subject, message })
@@ -152,7 +152,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     /*==================== Fetch Data from Backend ====================*/
-    const apiUrl = "https://my-portfolio-rjap.onrender.com";
+    const apiUrl = "https://my-portfolio-gljt.onrender.com";
 
     fetch(`${apiUrl}/api/endpoint`)
         .then(response => {
