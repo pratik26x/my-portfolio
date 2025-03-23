@@ -26,6 +26,12 @@ app.get("/", (req, res) => {
   res.send("Contact Form Backend is Running!");
 });
 
+// Error Handling Middleware
+app.use((err, req, res, next) => {
+  console.error("Server error:", err);
+  res.status(500).json({ success: false, message: "Internal server error. Please try again later." });
+});
+
 // Start the Server
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);

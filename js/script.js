@@ -125,7 +125,7 @@ document.addEventListener("DOMContentLoaded", function () {
             submitButton.innerText = "Sending...";
 
             try {
-                const response = await fetch("https://my-portfolio-gljt.onrender.com", {
+                const response = await fetch("https://my-portfolio-gljt.onrender.com/api/contact", {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({ name, email, phone, subject, message })
@@ -144,6 +144,7 @@ document.addEventListener("DOMContentLoaded", function () {
             } catch (error) {
                 responseMessage.innerText = "❌ Server error! Please try again later.";
                 responseMessage.style.color = "red";
+                console.error("Error:", error); // Log the error for debugging
             } finally {
                 submitButton.disabled = false;
                 submitButton.innerText = "Send Message";
