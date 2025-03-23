@@ -80,6 +80,8 @@ document.addEventListener("DOMContentLoaded", function () {
     /*==================== Contact Form Submission ====================*/
     const contactForm = document.getElementById("contactForm");
     if (contactForm) {
+        const submitButton = contactForm.querySelector("button[type='submit']");
+
         contactForm.addEventListener("submit", async function (event) {
             event.preventDefault(); // Prevent form from reloading the page
 
@@ -94,6 +96,13 @@ document.addEventListener("DOMContentLoaded", function () {
             // Reset response message
             responseMessage.innerText = "";
             responseMessage.style.color = "var(--main-color)";
+
+            // Validate required fields
+            if (!name || !email || !subject || !message) {
+                responseMessage.innerText = "❌ Please fill out all required fields.";
+                responseMessage.style.color = "red";
+                return;
+            }
 
             // Validate Email
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -112,9 +121,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // If validation passes, send the form data to the server
             responseMessage.innerText = "Sending message...";
+            submitButton.disabled = true;
+            submitButton.innerText = "Sending...";
 
             try {
-                const response = await fetch("http://localhost:5000/api/contact", {
+                const response = await fetch("https://my-portfolio-rjap.onrender.com/api/contact", {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({ name, email, phone, subject, message })
@@ -133,7 +144,26 @@ document.addEventListener("DOMContentLoaded", function () {
             } catch (error) {
                 responseMessage.innerText = "❌ Server error! Please try again later.";
                 responseMessage.style.color = "red";
+            } finally {
+                submitButton.disabled = false;
+                submitButton.innerText = "Send Message";
             }
         });
     }
+
+    /*==================== Fetch Data from Backend ====================*/
+    const apiUrl = "https://my-portfolio-rjap.onrender.com";
+
+    fetch(`${apiUrl}/api/endpoint`)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Network response was not ok");
+            }
+            return response.json();
+        })
+        .then(data => console.log(data))
+        .catch(error => {
+            console.error("Error fetching data:", error);
+            // Optionally, display an error message to the user
+        });
 });
